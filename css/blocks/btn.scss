@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    background: $red;
+    @include ubuntu(medium);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px 15px;
+    margin-left: 15px;
+    
+    &--left {
+        margin-left: 0;
+    }
+}

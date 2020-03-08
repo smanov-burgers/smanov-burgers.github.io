@@ -1,0 +1,10 @@
+.scroll-down {
+    background: url(/img//icons/arrow-scroll.svg) center center;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 15px;
+    border: none;
+}
