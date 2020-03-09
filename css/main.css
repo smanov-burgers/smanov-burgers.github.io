@@ -501,6 +501,9 @@ body {
   padding-bottom: 90px;
   padding-top: 56px;
 }
+.container--full-width {
+  width: 100%;
+}
 
 h1,
 h2,
@@ -509,6 +512,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
@@ -591,6 +595,7 @@ img {
   color: #f9b43b;
   margin-top: 36px;
   margin-bottom: 24px;
+  flex: 1 1 100%;
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   line-height: 1;
 }
@@ -837,4 +842,106 @@ img {
   padding: 8px 21px;
   border: none;
   border-radius: 4px;
+}
+
+.team-section {
+  background: url("/img/bg/bg-team.png") center center/cover no-repeat;
+}
+
+.team {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #2f3234;
+  opacity: 0.93;
+  padding-left: 116px;
+}
+.team__wrapper {
+  height: 80%;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.accordion-item {
+  margin-bottom: 20px;
+}
+.accordion-item__title {
+  color: #ffffff;
+  font-family: "Gagalin-Regular", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.accordion-item__title:before {
+  content: "";
+  display: inline-flex;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #f9b43b;
+  border-top-width: 7px;
+  border-bottom-width: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.accordion-item__content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.accordion-item__avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  flex: 0 0 100px;
+  background-size: cover;
+}
+.accordion-item__avatar--richard {
+  background: url("/img/content/team/richard.png") center center no-repeat;
+  background-size: cover;
+}
+.accordion-item__desc {
+  display: flex;
+  padding-left: 18px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.accordion-item__subtitle {
+  color: #fff;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1em;
+}
+.accordion-item__text {
+  color: #fff;
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 15px;
+}
+.accordion-item--selected .accordion-item__title {
+  color: #f9b43b;
+}
+.accordion-item--selected .accordion-item__title:before {
+  border-bottom-color: #f9b43b;
+  border-bottom-width: 7px;
+  border-top-width: 0;
+}
+.accordion-item--selected .accordion-item__content {
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 16px;
 }

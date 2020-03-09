@@ -1,0 +1,18 @@
+.team {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2f3234;
+    opacity: 0.93;
+    padding-left: 116px;
+
+    &__wrapper {
+        height: 80%;
+    }
+}
