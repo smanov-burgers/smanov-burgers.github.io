@@ -1,0 +1,29 @@
+.scroll {
+    position: absolute;
+    right: 40px;
+    top: 90px;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__dot {
+        width: 16px;
+        height: 16px;
+        padding: 4px;
+        border-radius: 50%;
+        background-color: #fff;
+        background-clip: content-box;
+        border: 1px solid transparent;
+        margin: 8px;
+        margin-top: 0;
+        margin-bottom: 5px;
+   
+        &--active {
+            border: 1px solid #fff;
+            
+        }
+    }
+}

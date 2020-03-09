@@ -22,12 +22,18 @@ body {
 }
 
 .container {
-  width: 940px;
-  margin: 0 auto;
-  height: 100%;
-  &--short {
-    height: 80%;
-  }
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+    &--padded {
+        padding-bottom: 90px;
+        padding-top: 56px;
+    }
 }
 
 

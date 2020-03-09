@@ -4,6 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 8px;
+    flex: 0 0 100%;
+    align-self: flex-start;
+    position: absolute;
+    width: 100%;
 }
 
 .header__btns {

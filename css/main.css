@@ -490,10 +490,16 @@ body {
 .container {
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 100%;
+  position: relative;
 }
-.container--short {
-  height: 80%;
+.container--padded {
+  padding-bottom: 90px;
+  padding-top: 56px;
 }
 
 h1,
@@ -542,6 +548,33 @@ img {
   max-width: 100%;
 }
 
+.scroll {
+  position: absolute;
+  right: 40px;
+  top: 90px;
+}
+.scroll__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll__dot {
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-clip: content-box;
+  border: 1px solid transparent;
+  margin: 8px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.scroll__dot--active {
+  border: 1px solid #fff;
+}
+
 .section {
   display: flex;
   flex-direction: column;
@@ -549,7 +582,7 @@ img {
   height: 100vh;
   min-height: 650px;
 }
-.section--align--top {
+.section--align-top {
   justify-content: flex-start;
 }
 
@@ -563,12 +596,9 @@ img {
 }
 .section__title--centered {
   text-align: center;
+  margin-bottom: 0;
 }
-.section__title--padded {
-  margin-bottom: 50px;
-  margin-top: 28px;
-}
-.section__title--color--black {
+.section__title--color-black {
   color: #2f3234;
 }
 
@@ -577,6 +607,10 @@ img {
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
+  flex: 0 0 100%;
+  align-self: flex-start;
+  position: absolute;
+  width: 100%;
 }
 
 .header__btns {
@@ -636,7 +670,7 @@ img {
 .hero__content {
   display: flex;
   align-items: center;
-  flex: 0.8;
+  flex: 1;
   padding-left: 26px;
 }
 

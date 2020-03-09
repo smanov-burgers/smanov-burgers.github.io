@@ -8,9 +8,10 @@ $red: #e35028;
 @import "_misc/normalize.scss";
 
 // Defaults
-@import "_misc/mixins";
+// @import "_misc/mixins";
 @import "_misc/fonts";
 @import "_misc/layout";
+@import "_misc/scroll.scss";
 
 // Blocks
 @import "./blocks/section.scss";
