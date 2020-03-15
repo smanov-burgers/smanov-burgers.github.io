@@ -1,0 +1,31 @@
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+
+        width: 20px;
+        height: 20px;
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--vk {
+            background: url("/img/icons/vk.svg") center center / contain no-repeat;
+        }
+
+        &--fb {
+            background: url("/img/icons/fb.svg") center center / contain no-repeat;
+        }
+
+        &--inst {
+            background: url("/img/icons/inst.svg") center center / contain no-repeat;
+        }
+
+        &--twitter {
+            background: url("/img/icons/twitter.svg") center center / contain no-repeat;
+        }
+    }
+}

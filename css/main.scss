@@ -4,11 +4,17 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
 
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 // Normalize
 @import "_misc/normalize.scss";
 
 // Defaults
-// @import "_misc/mixins";
+@import "_misc/media.scss";
+@import "_misc/mixins.scss";
 @import "_misc/fonts";
 @import "_misc/layout";
 @import "_misc/scroll.scss";
@@ -28,4 +34,9 @@ $red: #e35028;
 @import "./blocks/order.scss";
 @import "./blocks/team-section.scss";
 @import "./blocks/team.scss";
-@import "./blocks/accordion.scss";
+@import "./blocks/teamacc.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/menu-section.scss";
+@import "./blocks/menuacc.scss";

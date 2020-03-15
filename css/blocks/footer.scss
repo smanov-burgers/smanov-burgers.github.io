@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url("/img/bg/footer-bg.png") center center / cover no-repeat;
+    justify-content: center;
+    &__content {
+        width: 80%;
+        display: flex;
+    }
+
+    &__left {
+        flex: 1 1 50%;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        flex: 1 1 50%;
+        justify-content: flex-end;
+    }
+
+    &__address {
+        color: #fff;
+        @include ubuntu();
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__phone {
+        color: #e45028;
+        @include ubuntu(bold);
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+            content: "";
+            background: url("/img/icons/phone.svg") center center / cover no-repeat;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+        }
+    }
+
+}
