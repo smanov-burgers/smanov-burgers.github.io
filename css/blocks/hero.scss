@@ -13,7 +13,7 @@
 
 
 .hero__desc {
-    font-size: 62px;
+    font-size: rem(62px);
     @include lifehack();
     line-height: 1;
 }
@@ -23,11 +23,11 @@
     display: flex;
     align-items: center;
     flex: 1;
-    padding-left: 26px;
+    padding-left: rem(26px);
 }
 
 .hero__text {
     width: 50%;
-    padding-top: 94px;
-    padding-left: 12px;
+    padding-top: rem(94px);
+    padding-left: rem(12px);
 }

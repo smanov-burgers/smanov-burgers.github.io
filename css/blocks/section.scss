@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 
     &--align-top {
         justify-content: flex-start;
@@ -12,29 +12,29 @@
 
 .section__title {
 
-    font-size: 72px;
+    font-size: rem(72px);
     color: $yellow;
-    margin-top: 36px;
-    margin-bottom: 24px;
+    margin-top: rem(36px);
+    margin-bottom: rem(24px);
     flex: 1 1 100%;
     @include gagalin();
     line-height: 1;
 
     &--centered {
         text-align: center;
-        // margin-top: 70px;
+        // margin-top: rem(70px);
         margin-bottom: 0;
     }
 
     &--left {
         text-align: left;
-        // margin-top: 70px;
+        // margin-top: rem(70px);
         margin-bottom: 0;
     }
 
     // &--padded {
-    //     margin-bottom: 50px;
-    //     margin-top: 28px;
+    //     margin-bottom: rem(50px);
+    //     margin-top: rem(28px);
     // }
 
     &--color-black {

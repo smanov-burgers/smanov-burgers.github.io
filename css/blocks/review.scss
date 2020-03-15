@@ -5,7 +5,7 @@
     &__username {
         color: #ffffff;
         @include gagalin();
-        font-size: 14px;
+        font-size: rem(14px);
     }
 
     &:hover {
@@ -33,8 +33,8 @@
 }
 
 .review__hover {
-    padding: 20px;
-    padding-top: 46px;
+    padding: rem(20px);
+    padding-top: rem(46px);
     position: absolute;
     top: 0;
     left: 0;
@@ -47,8 +47,8 @@
 
 .review__content {
     @include ubuntu(light);
-    font-size: 14px;
-    line-height: 24px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    padding-top: rem(20px);
+    padding-bottom: rem(10px);
 }

@@ -24,15 +24,15 @@
     &__address {
         color: #fff;
         @include ubuntu();
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14px);
+        line-height: rem(24px);
     }
 
     &__phone {
         color: #e45028;
         @include ubuntu(bold);
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14px);
+        line-height: rem(24px);
         display: flex;
         align-items: center;
 
@@ -40,9 +40,9 @@
             content: "";
             background: url("/img/icons/phone.svg") center center / cover no-repeat;
             display: block;
-            width: 12px;
-            height: 12px;
-            margin-right: 10px;
+            width: rem(12px);
+            height: rem(12px);
+            margin-right: rem(10px);
         }
     }
 

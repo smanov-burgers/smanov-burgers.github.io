@@ -5,9 +5,9 @@
 .features__list {
     display: flex;
     justify-content: space-between;
-    // padding-bottom: 90px;
+    // padding-bottom: rem(90px);
 }
 
 .features__item {
-    width: calc(100% / 3 - 26px);
+    width: calc(100% / 3 - #{rem(26px)});
 }

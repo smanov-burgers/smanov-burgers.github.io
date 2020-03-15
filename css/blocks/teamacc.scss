@@ -2,28 +2,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: rem(40px);
 
     &-item {
         $self: &;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
         &__title {
             color: #ffffff;
             @include gagalin();
-            font-size: 14px;
+            font-size: rem(14px);
             font-weight: 400;
-            line-height: 28px;
+            line-height: rem(28px);
             
             &:before {
                 content: "";
                 display: inline-flex;
                 width: 0;
                 height: 0;
-                border: 5px solid transparent;
+                border: rem(5px) solid transparent;
                 border-top-color:#f9b43b;
-                border-top-width: 7px;
+                border-top-width: rem(7px);
                 border-bottom-width: 0;
-                margin-right: 10px;
+                margin-right: rem(10px);
                 vertical-align: middle;
             }
     
@@ -33,14 +33,14 @@
             display: flex;
             height: 0;
             overflow: hidden;
-            padding-left: 20px;
+            padding-left: rem(20px);
         }
 
         &__avatar {
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            flex: 0 0 100px;
+            width: rem(100px);
+            height: rem(100px);
+            flex: 0 0 rem(100px);
             background-size: cover;
             &--richard {
                 background: url('/img/content/team/richard.png') center center no-repeat;
@@ -50,7 +50,7 @@
 
         &__desc {
             display: flex;
-            padding-left: 18px;
+            padding-left: rem(18px);
             width: 50%;
             flex-wrap: wrap;
         }
@@ -58,16 +58,16 @@
         &__subtitle {
             color: #fff;
             @include ubuntu(bold);
-            font-size: 14px;
+            font-size: rem(14px);
             line-height: 1em;
         }
 
         &__text {
             color: #fff;
             @include ubuntu(light);
-            font-size: 14px;
-            line-height: 24px;
-            padding-top: 15px;
+            font-size: rem(14px);
+            line-height: rem(24px);
+            padding-top: rem(15px);
         }
         
         &--selected {
@@ -76,15 +76,15 @@
                 
                 &:before {
                     border-bottom-color:#f9b43b;
-                    border-bottom-width: 7px;
+                    border-bottom-width: rem(7px);
                     border-top-width: 0;
                 }
             }
 
             #{$self}__content {
                 height: auto;
-                padding-top: 10px;
-                padding-bottom: 16px;
+                padding-top: rem(10px);
+                padding-bottom: rem(16px);
             }
         }
     }

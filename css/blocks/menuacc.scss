@@ -16,7 +16,7 @@
 
     &_active {
         .menuacc__content {
-            width: 540px;
+            width: rem(540px);
         }
         .menuacc__title-text {
             color: $yellow;
@@ -25,7 +25,7 @@
 
     &:hover {
         .menuacc__content {
-            width: 540px;
+            width: rem(540px);
         }
         .menuacc__title-text {
             color: $yellow;
@@ -35,21 +35,21 @@
 
 .menuacc__title {
     position: relative;
-    width: 80px;
+    width: rem(80px);
     flex: 0 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @include gagalin();
-    font-size: 40px;
+    font-size: rem(40px);
 }
 
 .menuacc__title-text {
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 50%;
     transform: rotate(-90deg) translate(0, -50%);
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
     transform-origin: 0 0;
     white-space: nowrap;
@@ -63,6 +63,6 @@
 }
 
 .menuacc__content-text {
-    padding: 60px 30px;
-    width: 540px;
+    padding: rem(60px) rem(30px);
+    width: rem(540px);
 }

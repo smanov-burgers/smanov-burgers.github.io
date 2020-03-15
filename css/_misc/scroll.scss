@@ -1,7 +1,7 @@
 .scroll {
-    position: absolute;
-    right: 40px;
-    top: 90px;
+    position: fixed;
+    right: rem(40px);
+    top: rem(90px);
     &__list {
         display: flex;
         flex-direction: column;
@@ -10,16 +10,16 @@
     }
 
     &__dot {
-        width: 16px;
-        height: 16px;
-        padding: 4px;
+        width: rem(16px);
+        height: rem(16px);
+        padding: rem(4px);
         border-radius: 50%;
         background-color: #fff;
         background-clip: content-box;
         border: 1px solid transparent;
-        margin: 8px;
+        margin: rem(8px);
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: rem(5px);
    
         &--active {
             border: 1px solid #fff;

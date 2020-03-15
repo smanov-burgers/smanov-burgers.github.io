@@ -2,12 +2,12 @@
     display: inline-block;
     background: $red;
     @include ubuntu(medium);
-    font-size: 13px;
+    font-size: rem(13px);
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 5px;
-    padding: 9px 15px;
-    margin-left: 15px;
+    border-radius: rem(5px);
+    padding: rem(9px) rem(15px);
+    margin-left: rem(15px);
     
     &--left {
         margin-left: 0;

@@ -4,9 +4,9 @@
 
     &__item {
 
-        width: 20px;
-        height: 20px;
-        margin-right: 18px;
+        width: rem(20px);
+        height: rem(20px);
+        margin-right: rem(18px);
 
         &:last-child {
             margin-right: 0;
