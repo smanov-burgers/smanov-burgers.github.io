@@ -8,10 +8,21 @@
     &__content {
         width: 80%;
         display: flex;
+
+        @include phones {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 
     &__left {
         flex: 1 1 50%;
+
+        @include phones {
+            justify-content: center;
+            padding-top: rem(16px);
+        }
     }
 
     &__right {
@@ -19,6 +30,12 @@
         align-items: center;
         flex: 1 1 50%;
         justify-content: flex-end;
+
+        @include phones {
+            justify-content: center;
+            padding-top: rem(16px);
+            padding-bottom: rem(16px);
+        }
     }
 
     &__address {
@@ -26,6 +43,12 @@
         @include ubuntu();
         font-size: rem(14px);
         line-height: rem(24px);
+    }
+
+    &__text {
+        @include phones {
+            text-align: center;
+        }
     }
 
     &__phone {
@@ -36,6 +59,10 @@
         display: flex;
         align-items: center;
 
+        @include phones {
+            justify-content: center;
+        }
+       
         &:before {
             content: "";
             background: url("/img/icons/phone.svg") center center / cover no-repeat;

@@ -6,8 +6,16 @@
     display: flex;
     justify-content: space-between;
     // padding-bottom: rem(90px);
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .features__item {
     width: calc(100% / 3 - #{rem(26px)});
+
+    @include phones {
+        width: 100%;
+        display: flex;
+    }
 }

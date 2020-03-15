@@ -6,6 +6,10 @@
         color: #ffffff;
         @include gagalin();
         font-size: rem(14px);
+
+        @include phones {
+            font-size:  rem(24px);
+        }
     }
 
     &:hover {
@@ -43,6 +47,17 @@
     opacity: 0;
     transform: scale(.8);
     transition: .3s;
+
+    @include tablets {
+        padding-top: 6%;
+        text-align: center;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .review__content {
@@ -51,4 +66,8 @@
     line-height: rem(24px);
     padding-top: rem(20px);
     padding-bottom: rem(10px);
+
+    @include phones {
+        display: none;
+    }
 }

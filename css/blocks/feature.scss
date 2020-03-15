@@ -1,9 +1,12 @@
 .feature {
     text-align: center;
+    
 
     &__img {
         display: flex;
         justify-content: center;
+        flex-shrink: 0;
+        min-width: rem(100px);
     }
 
     &__title {
@@ -13,6 +16,11 @@
 
     &__content {
         padding-top: rem(30px);
+
+        @include phones {
+            text-align: left;
+            padding-left: rem(20px);
+        }
     }
 }
 

@@ -13,6 +13,10 @@
             font-size: rem(14px);
             font-weight: 400;
             line-height: rem(28px);
+
+            @include tablets {
+                font-size: rem(25px);
+            }
             
             &:before {
                 content: "";
@@ -34,6 +38,14 @@
             height: 0;
             overflow: hidden;
             padding-left: rem(20px);
+
+            @include tablets {
+                display: flex;
+                flex-direction: column;
+                padding: 0 10%;
+                align-items: center;
+                text-align: center;
+            }
         }
 
         &__avatar {
@@ -53,6 +65,13 @@
             padding-left: rem(18px);
             width: 50%;
             flex-wrap: wrap;
+
+            @include tablets {
+                width: 100%;
+                margin-top: rem(20px);
+                padding: 0 10%;
+                justify-content: center;
+            }
         }
 
         &__subtitle {

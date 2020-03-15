@@ -17,6 +17,9 @@
     &_active {
         .menuacc__content {
             width: rem(540px);
+            @include phones {
+                width: rem(200px);
+            }
         }
         .menuacc__title-text {
             color: $yellow;
@@ -26,6 +29,9 @@
     &:hover {
         .menuacc__content {
             width: rem(540px);
+            @include phones {
+                width: rem(200px);
+            }
         }
         .menuacc__title-text {
             color: $yellow;
@@ -60,9 +66,14 @@
     width: 0;
     overflow: hidden;
     transition: 0.3s width;
+    
 }
 
 .menuacc__content-text {
     padding: rem(60px) rem(30px);
     width: rem(540px);
+
+    @include phones {
+        width: rem(200px);
+    }
 }

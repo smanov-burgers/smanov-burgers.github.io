@@ -16,9 +16,13 @@
     color: $yellow;
     margin-top: rem(36px);
     margin-bottom: rem(24px);
-    flex: 1 1 100%;
+    // flex: 1 1 100%;
     @include gagalin();
     line-height: 1;
+
+    @include phones {
+        font-size: rem(57px);
+    }
 
     &--centered {
         text-align: center;
@@ -26,11 +30,7 @@
         margin-bottom: 0;
     }
 
-    &--left {
-        text-align: left;
-        // margin-top: rem(70px);
-        margin-bottom: 0;
-    }
+    
 
     // &--padded {
     //     margin-bottom: rem(50px);
@@ -39,5 +39,19 @@
 
     &--color-black {
         color: $black;
+    }
+}
+
+.section__title-wrapper {
+    width: 100%;
+    padding: rem(100px);
+    &--top-left {
+        text-align: left;
+        align-self: start;
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+        padding: 12%;
     }
 }

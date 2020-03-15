@@ -16,6 +16,10 @@
     font-size: rem(62px);
     @include lifehack();
     line-height: 1;
+
+    @include phones {
+        font-size: rem(48px);
+    }
 }
 
 
@@ -24,10 +28,22 @@
     align-items: center;
     flex: 1;
     padding-left: rem(26px);
+
+    @include tablets {
+        flex-direction: column;
+        padding: 0 20%;
+    }
 }
 
 .hero__text {
     width: 50%;
     padding-top: rem(94px);
     padding-left: rem(12px);
+
+    @include tablets {
+        width: auto;
+        padding-top: 0;
+        padding-left: 0;
+        text-align: center;
+    }
 }
