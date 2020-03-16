@@ -12,24 +12,19 @@
 
     &--phone {
         display: none; 
+        @include phones {
+            display: inline-block; 
+        }
     }
 
-    // @include tablets {
-    //     &:not(&--phone) {
-    //         display: none; 
-    //     }
-    // }
+    &--desktop {
+        @include phones {
+            display: none; 
+        }
+    }
 
     &--left {
         margin-left: 0;
     }
 
-    @include phones {
-        &--phone {
-           display: inline-block; 
-        }
-        &:not(&--phone) {
-            display: none; 
-        }
-    }
 }

@@ -67,6 +67,11 @@
     padding-top: rem(20px);
     padding-bottom: rem(10px);
 
+    @include tablets {
+        padding-top: rem(10px);
+        line-height: rem(20px);
+    }
+
     @include phones {
         display: none;
     }

@@ -785,16 +785,18 @@ img {
 .btn--phone {
   display: none;
 }
-.btn--left {
-  margin-left: 0;
-}
 @media screen and (max-width: 480px) {
   .btn--phone {
     display: inline-block;
   }
-  .btn:not(.btn--phone) {
+}
+@media screen and (max-width: 480px) {
+  .btn--desktop {
     display: none;
   }
+}
+.btn--left {
+  margin-left: 0;
 }
 
 .scroll-down {
@@ -961,6 +963,12 @@ img {
   line-height: 1.5rem;
   padding-top: 1.25rem;
   padding-bottom: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  .review__content {
+    padding-top: 0.625rem;
+    line-height: 1.25rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .review__content {
