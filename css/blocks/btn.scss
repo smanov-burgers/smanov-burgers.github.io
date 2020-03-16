@@ -9,7 +9,27 @@
     padding: rem(9px) rem(15px);
     margin-left: rem(15px);
     
+
+    &--phone {
+        display: none; 
+    }
+
+    // @include tablets {
+    //     &:not(&--phone) {
+    //         display: none; 
+    //     }
+    // }
+
     &--left {
         margin-left: 0;
+    }
+
+    @include phones {
+        &--phone {
+           display: inline-block; 
+        }
+        &:not(&--phone) {
+            display: none; 
+        }
     }
 }

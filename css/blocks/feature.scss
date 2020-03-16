@@ -7,7 +7,24 @@
         justify-content: center;
         flex-shrink: 0;
         min-width: rem(100px);
+        
+        &-elem {
+            width: rem(100px);
+            height: rem(100px);
+            &--meat {
+                fill: #e25028;
+            }
+
+            &--hand {
+                fill: #f8b43a;
+            }
+
+            &--natural {
+                fill: #a5cd68;
+            }
+        }
     }
+    
 
     &__title {
         @include lifehack();

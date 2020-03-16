@@ -782,8 +782,19 @@ img {
   padding: 0.5625rem 0.9375rem;
   margin-left: 0.9375rem;
 }
+.btn--phone {
+  display: none;
+}
 .btn--left {
   margin-left: 0;
+}
+@media screen and (max-width: 480px) {
+  .btn--phone {
+    display: inline-block;
+  }
+  .btn:not(.btn--phone) {
+    display: none;
+  }
 }
 
 .scroll-down {
@@ -829,6 +840,19 @@ img {
   justify-content: center;
   flex-shrink: 0;
   min-width: 6.25rem;
+}
+.feature__img-elem {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.feature__img-elem--meat {
+  fill: #e25028;
+}
+.feature__img-elem--hand {
+  fill: #f8b43a;
+}
+.feature__img-elem--natural {
+  fill: #a5cd68;
 }
 .feature__title {
   font-family: "Lifehack-Medium";
@@ -1016,6 +1040,10 @@ img {
   border: 0.0625rem solid #d1cfcb;
   border-radius: 0.3125rem;
   width: 100%;
+  outline: none;
+}
+.order__form-input:focus {
+  outline: 1px solid #f9b43b;
 }
 
 .order__form-block {
@@ -1109,7 +1137,7 @@ img {
   background: transparent;
 }
 .order__radio_checkbox .order__radio-elem:checked + .order__radio-fake:after {
-  background: url("../../img/icons/check.svg") 50% no-repeat transparent;
+  background: url("/img/icons/check.svg") 50% no-repeat transparent;
   background-size: contain;
   width: 0.6875rem;
   height: 0.5625rem;
@@ -1350,12 +1378,10 @@ img {
     justify-content: center;
   }
 }
-.footer__phone:before {
-  content: "";
-  background: url("/img/icons/phone.svg") center center/cover no-repeat;
-  display: block;
+.footer__phone-icon {
   width: 0.75rem;
   height: 0.75rem;
+  fill: #e45028;
   margin-right: 0.625rem;
 }
 
@@ -1371,17 +1397,13 @@ img {
 .socials__item:last-child {
   margin-right: 0;
 }
-.socials__item--vk {
-  background: url("/img/icons/vk.svg") center center/contain no-repeat;
+.socials__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #585858;
 }
-.socials__item--fb {
-  background: url("/img/icons/fb.svg") center center/contain no-repeat;
-}
-.socials__item--inst {
-  background: url("/img/icons/inst.svg") center center/contain no-repeat;
-}
-.socials__item--twitter {
-  background: url("/img/icons/twitter.svg") center center/contain no-repeat;
+.socials__icon:hover {
+  fill: #fff;
 }
 
 .menu-section {
@@ -1436,6 +1458,15 @@ img {
   background-size: cover;
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   font-size: 2.5rem;
+}
+.menuacc__title--img1 {
+  background: url("/img/content/accordion/img1.jpg") center center/cover no-repeat;
+}
+.menuacc__title--img2 {
+  background: url("/img/content/accordion/img2.jpg") center center/cover no-repeat;
+}
+.menuacc__title--img3 {
+  background: url("/img/content/accordion/img3.jpg") center center/cover no-repeat;
 }
 
 .menuacc__title-text {

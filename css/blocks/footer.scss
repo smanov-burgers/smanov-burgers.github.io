@@ -62,15 +62,14 @@
         @include phones {
             justify-content: center;
         }
-       
-        &:before {
-            content: "";
-            background: url("/img/icons/phone.svg") center center / cover no-repeat;
-            display: block;
+
+        &-icon {
             width: rem(12px);
             height: rem(12px);
+            fill: #e45028;
             margin-right: rem(10px);
         }
+       
     }
 
 }

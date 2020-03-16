@@ -48,6 +48,18 @@
     background-size: cover;
     @include gagalin();
     font-size: rem(40px);
+
+    &--img1 {
+        background: url("/img/content/accordion/img1.jpg") center center / cover no-repeat;
+    }
+
+    &--img2 {
+        background: url("/img/content/accordion/img2.jpg") center center / cover no-repeat;
+    }
+
+    &--img3 {
+        background: url("/img/content/accordion/img3.jpg") center center / cover no-repeat;
+    }
 }
 
 .menuacc__title-text {

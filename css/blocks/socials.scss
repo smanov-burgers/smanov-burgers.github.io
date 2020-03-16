@@ -12,20 +12,15 @@
             margin-right: 0;
         }
 
-        &--vk {
-            background: url("/img/icons/vk.svg") center center / contain no-repeat;
-        }
+    }
 
-        &--fb {
-            background: url("/img/icons/fb.svg") center center / contain no-repeat;
-        }
+    &__icon {
 
-        &--inst {
-            background: url("/img/icons/inst.svg") center center / contain no-repeat;
-        }
-
-        &--twitter {
-            background: url("/img/icons/twitter.svg") center center / contain no-repeat;
+        width: rem(20px);
+        height: rem(20px);
+        fill: #585858;
+        &:hover {
+            fill: #fff;
         }
     }
 }
