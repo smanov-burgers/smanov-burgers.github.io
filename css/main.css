@@ -1214,7 +1214,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .team__wrapper {
-    height: 60%;
+    height: 80%;
     margin-top: 20%;
   }
 }
