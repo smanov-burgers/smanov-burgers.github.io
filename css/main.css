@@ -837,6 +837,11 @@ img {
 .feature {
   text-align: center;
 }
+@media screen and (max-width: 480px) {
+  .feature {
+    padding-top: 1.25rem;
+  }
+}
 .feature__img {
   display: flex;
   justify-content: center;
@@ -867,6 +872,7 @@ img {
   .feature__content {
     text-align: left;
     padding-left: 1.25rem;
+    padding-top: 0;
   }
 }
 

@@ -1,6 +1,9 @@
 .feature {
     text-align: center;
     
+    @include phones {
+        padding-top: rem(20px);
+    }
 
     &__img {
         display: flex;
@@ -37,6 +40,7 @@
         @include phones {
             text-align: left;
             padding-left: rem(20px);
+            padding-top: 0;
         }
     }
 }
