@@ -1,19 +1,36 @@
 $itemsMargin: rem(15px);
 
 .menu {
+    display: flex;
     @include tablets {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    &--display-none{
+        @include tablets {
+            display: none;
+        }
     }
 }
 
 .menu__list {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+    }
 }
 
 .menu__item {
     display: flex;
     align-items: center;
+    position: relative;
 
     &:before {
       content: "";
@@ -23,6 +40,18 @@ $itemsMargin: rem(15px);
       border-radius: 50%;
       background: currentColor;
       margin-left: $itemsMargin;
+
+      @include tablets {
+        content: "";
+        display: block;
+        width: rem(8px);
+        height: rem(8px);
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+    }
   }
 
   &:first-child {
@@ -39,6 +68,13 @@ $itemsMargin: rem(15px);
     @include ubuntu(medium);
     font-size: rem(13px);
     text-transform: uppercase;
+
+    @include tablets {
+        @include ubuntu(light);
+        font-size: rem(33px);
+        color: #fff;
+        margin-left: 0;
+    }
 }
 
 .hamburger-menu {
@@ -51,7 +87,13 @@ $itemsMargin: rem(15px);
 
 	@include tablets {
 		display: inline-flex;
-	}
+    }
+    
+    &--display-none {
+        @include tablets {
+            display: none;
+        }
+    }
 }
 
 .hamburger-menu--bars {

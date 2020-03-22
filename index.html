@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная страница</title>
   <link rel="stylesheet" href="./css/main.css">
+  <!-- <script src="/js/main.js" type="text/javascript"></script> -->
+  <script src="/js/main.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,11 +16,12 @@
     <div class="sections-wrapper">
       <section class="section hero section--align-top">
         
-        <div class="container">
+        <div class="container container--full-width">
           <header class="header">
-            <img src="./img/icons/logo.svg" alt="mr burger icon">
+            <img src="./img/icons/logo.svg" alt="mr burger icon" class="header__logo">
             <div class="header__btns">
-              <nav class="menu">
+              <a href="#" class="btn-close"></a>
+              <nav class="menu menu--display-none">
                 <ul class="menu__list">
                   <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
                   <li class="menu__item"><a href="" class="menu__link">Бургеры</a></li>
@@ -29,7 +32,7 @@
                   <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                 </ul>
               </nav>
-              <a href="" class="btn">Заказать</a>
+              <a href="" class="btn" id="btn-order">Заказать</a>
 
               <a class="hamburger-menu" href="">
                 <div class="hamburger-menu--bars"></div>
@@ -182,6 +185,166 @@
                 </div>
                 <div class="slider__col slider__col--padding">
                   <h2 class="section__title section__title--color-white">Dark BEEF Burger</h2>
+                  <div class="slider__text">
+                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__cost">
+                      <span>500</span> рублей
+                    </div>
+                    <a href="" class="btn">Заказать</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__elem">
+                <div class="recipe">
+                  <a href="#" class="recipe__btn">
+                    <svg class="recipe__icon">
+                      <use xlink:href="/img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="recipe__icon-text">состав</div>
+                  </a>
+                  <ul class="recipe__list">
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="recipe__text">Говядина</div>
+                      <div class="recipe__weight">300 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="recipe__text">Булочки</div>
+                      <div class="recipe__weight">100 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="recipe__text">Зелень</div>
+                      <div class="recipe__weight">70 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="recipe__text">Соус</div>
+                      <div class="recipe__weight">150 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="recipe__text">Овощи</div>
+                      <div class="recipe__weight">200 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="recipe__text">Сыр</div>
+                      <div class="recipe__weight">80 г</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__weight">
+                  <svg class="slider__weight-icon">
+                    <use xlink:href="/img/icons/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="slider__weight-text">ккал</div>
+                  <div class="slider__weight-numbers">1200</div>
+                </div>
+                
+                <div class="slider__col">
+                  <div class="slider__img">
+                    <img src="/img/content/slider/chiken_burger.png" alt="черный бургер">
+                  </div>
+                </div>
+                <div class="slider__col slider__col--padding">
+                  <h2 class="section__title section__title--color-white">Chicken Burger</h2>
+                  <div class="slider__text">
+                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__cost">
+                      <span>500</span> рублей
+                    </div>
+                    <a href="" class="btn">Заказать</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__elem">
+                <div class="recipe">
+                  <a href="#" class="recipe__btn">
+                    <svg class="recipe__icon">
+                      <use xlink:href="/img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="recipe__icon-text">состав</div>
+                  </a>
+                  <ul class="recipe__list">
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="recipe__text">Говядина</div>
+                      <div class="recipe__weight">300 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="recipe__text">Булочки</div>
+                      <div class="recipe__weight">100 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="recipe__text">Зелень</div>
+                      <div class="recipe__weight">70 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="recipe__text">Соус</div>
+                      <div class="recipe__weight">150 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="recipe__text">Овощи</div>
+                      <div class="recipe__weight">200 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="recipe__text">Сыр</div>
+                      <div class="recipe__weight">80 г</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__weight">
+                  <svg class="slider__weight-icon">
+                    <use xlink:href="/img/icons/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="slider__weight-text">ккал</div>
+                  <div class="slider__weight-numbers">1200</div>
+                </div>
+                
+                <div class="slider__col">
+                  <div class="slider__img">
+                    <img src="/img/content/slider/burger_sandwich.png" alt="черный бургер">
+                  </div>
+                </div>
+                <div class="slider__col slider__col--padding">
+                  <h2 class="section__title section__title--color-white">Burger Sandwich</h2>
                   <div class="slider__text">
                     Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
                   </div>

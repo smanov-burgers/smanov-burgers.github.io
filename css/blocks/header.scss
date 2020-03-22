@@ -7,7 +7,33 @@
     flex: 0 0 100%;
     align-self: flex-start;
     position: absolute;
-    width: 100%;
+    width: 95%;
+
+    &--overlay {
+        @include tablets {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(#2f3234, 0.99);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+
+            & .header__logo {
+                & {
+                    position: absolute;
+                    top: rem(8px);
+                    left: 2.5%;
+                }
+            }
+            
+        }
+    }
+    
 }
 
 .header__btns {
@@ -15,4 +41,42 @@
     display: flex;
     align-items: center;
 }
+
+
+.btn-close {
+    display: none;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+    }
+
+    &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 4px;
+        background-color: #fff;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+    &--active {
+        display: block;
+    }
+  }
+    
+  
+
+  
 

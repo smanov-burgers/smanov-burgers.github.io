@@ -27,4 +27,10 @@
         margin-left: 0;
     }
 
+    &--display-none {
+        @include tablets {
+            display: none;
+        }
+    }
+
 }
