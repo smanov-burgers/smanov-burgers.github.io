@@ -3,6 +3,7 @@ $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
+$white: #fff;
 
 $phones: 480px;
 $tablets: 768px;
@@ -40,3 +41,6 @@ $desktop: 1200px;
 @import "./blocks/socials.scss";
 @import "./blocks/menu-section.scss";
 @import "./blocks/menuacc.scss";
+@import "./blocks/burgers.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/recipe.scss";
