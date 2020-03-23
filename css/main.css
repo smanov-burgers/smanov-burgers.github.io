@@ -680,6 +680,18 @@ img {
     top: 0.5rem;
     left: 2.5%;
   }
+  .header--overlay .btn-close {
+    display: block;
+  }
+  .header--overlay .hamburger-menu {
+    display: none;
+  }
+  .header--overlay .btn {
+    display: none;
+  }
+  .header--overlay .menu {
+    display: flex;
+  }
 }
 
 .header__btns {
@@ -713,8 +725,37 @@ img {
 .btn-close:after {
   transform: rotate(-45deg);
 }
-.btn-close--active {
+
+.hamburger-menu {
+  vertical-align: middle;
+  position: relative;
+  height: 1.375rem;
+  align-items: center;
+  margin-left: 1.875rem;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: inline-flex;
+  }
+}
+
+.hamburger-menu--bars, .hamburger-menu--bars:before, .hamburger-menu--bars:after {
+  background: #fff;
+  width: 1.5rem;
+  height: 0.3125rem;
+  border-radius: 0.1875rem;
+}
+.hamburger-menu--bars:before, .hamburger-menu--bars:after {
+  content: "";
   display: block;
+  position: absolute;
+}
+.hamburger-menu--bars:before {
+  top: 0;
+}
+.hamburger-menu--bars:after {
+  bottom: 0;
 }
 
 .menu {
@@ -726,10 +767,6 @@ img {
     align-items: center;
     justify-content: center;
     height: 100vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu--display-none {
     display: none;
   }
 }
@@ -793,43 +830,6 @@ img {
     color: #fff;
     margin-left: 0;
   }
-}
-
-.hamburger-menu {
-  vertical-align: middle;
-  position: relative;
-  height: 1.375rem;
-  align-items: center;
-  margin-left: 1.875rem;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .hamburger-menu {
-    display: inline-flex;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hamburger-menu--display-none {
-    display: none;
-  }
-}
-
-.hamburger-menu--bars, .hamburger-menu--bars:before, .hamburger-menu--bars:after {
-  background: #fff;
-  width: 1.5rem;
-  height: 0.3125rem;
-  border-radius: 0.1875rem;
-}
-.hamburger-menu--bars:before, .hamburger-menu--bars:after {
-  content: "";
-  display: block;
-  position: absolute;
-}
-.hamburger-menu--bars:before {
-  top: 0;
-}
-.hamburger-menu--bars:after {
-  bottom: 0;
 }
 
 .hero {
@@ -916,14 +916,8 @@ img {
 .btn--left {
   margin-left: 0;
 }
-@media screen and (max-width: 768px) {
-  .btn--display-none {
-    display: none;
-  }
-}
 
 .scroll-down {
-  background: url(/img//icons/arrow-scroll.svg) center center;
   position: absolute;
   bottom: 2.5rem;
   left: 50%;
@@ -931,6 +925,11 @@ img {
   width: 1.875rem;
   height: 0.9375rem;
   border: none;
+}
+.scroll-down__icon {
+  width: 1.875rem;
+  height: 0.9375rem;
+  fill: #fff;
 }
 
 .features {
@@ -1357,6 +1356,7 @@ img {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75rem;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .teamacc-item__title {
@@ -1767,7 +1767,6 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 .slider__arrow {
-  background: url(/img//icons/arrow-scroll.svg) center center;
   position: absolute;
   width: 1.875rem;
   height: 0.9375rem;
@@ -1782,6 +1781,11 @@ img {
   right: 0;
   top: 50%;
   transform: translateX(50%) rotate(-90deg);
+}
+.slider__arrow-icon {
+  width: 1.875rem;
+  height: 0.9375rem;
+  fill: #fff;
 }
 
 .recipe {

@@ -1,5 +1,5 @@
 .scroll-down {
-    background: url(/img//icons/arrow-scroll.svg) center center;
+    // background: url(/img//icons/arrow-scroll.svg) center center;
     position: absolute;
     bottom: rem(40px);
     left: 50%;
@@ -7,4 +7,9 @@
     width: rem(30px);
     height: rem(15px);
     border: none;
+    &__icon {
+        width: rem(30px);
+        height: rem(15px);
+        fill: #fff;
+    }
 }

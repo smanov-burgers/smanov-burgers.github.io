@@ -24,25 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu_btn = document.querySelector(".hamburger-menu");
     const btn_close = document.querySelector(".btn-close");
     const menu = document.querySelector(".menu");
-    const btn_order = document.querySelector("#btn-order");
-    const hamburger_menu = document.querySelector(".hamburger-menu");
     const header = document.querySelector(".header");
     menu_btn.addEventListener("click", function (e) {
         e.preventDefault();
-        btn_order.classList.add("btn--display-none");
-        hamburger_menu.classList.add("hamburger-menu--display-none");
-        header.classList.add("header--overlay");
-        menu.classList.remove("menu--display-none");
-        btn_close.classList.add("btn-close--active");
+        header.classList.toggle("header--overlay");
     });
 
     btn_close.addEventListener("click", function (e) {
         e.preventDefault();
-        btn_order.classList.remove("btn--display-none");
-        hamburger_menu.classList.remove("hamburger-menu--display-none");
-        header.classList.remove("header--overlay");
-        menu.classList.add("menu--display-none");
-        btn_close.classList.remove("btn-close--active");
+        header.classList.toggle("header--overlay");
     });
 
 });

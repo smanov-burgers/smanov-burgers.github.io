@@ -136,7 +136,7 @@
     }
 
     &__arrow {
-        background: url(/img//icons/arrow-scroll.svg) center center;
+        // background: url(/img//icons/arrow-scroll.svg) center center;
         position: absolute;
         // bottom: rem(40px);
         width: rem(30px);
@@ -153,6 +153,12 @@
             right: 0;
             top: 50%;
             transform: translateX(50%) rotate(-90deg);
+        }
+
+        &-icon {
+            width: rem(30px);
+            height: rem(15px);
+            fill: #fff;
         }
     }
 
