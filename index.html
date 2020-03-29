@@ -440,7 +440,7 @@
           <div class="menuacc">
             <ul class="menuacc__list">
               <li class="menuacc__elem">
-                <a href="#" class="menuacc__title menuacc__title--img1 menuacc__elem_active">
+                <a href="#" class="menuacc__title menuacc__title--img1">
                   <div class="menuacc__title-text">Для мясоедов</div>
                 </a>
                 <div class="menuacc__content">
@@ -612,15 +612,18 @@
           <h2 class="section__title section__title--centered">Закажите доставку</h2>
           <div class="order__form">
             <form class="order__form-form" id="order-form">
+              <input name="to" type="hidden" id="email" value="Nuridin_s@mail.ru" required>
               <div class="order__form-col">
                 <div class="order__form-row order__form-row--two">
                   <label class="order__form-block">
                     <div class="order__form-label">Имя</div>
-                    <input class="order__form-input" name="name" type="text" placeholder="">
+                    <input class="order__form-input" name="name" type="text" placeholder="" required>
+                    <!-- <div class="error"></div> -->
                   </label>
                   <label class="order__form-block">
                     <div class="order__form-label">Телефон</div>
-                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="">
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="" required>
+                    <!-- <div class="error"></div> -->
                   </label>
                 </div>
                 <div class="order__form-row">
@@ -652,7 +655,8 @@
                 <div class="order__form-row">
                   <label class="order__form-block">
                     <div class="order__form-label">Комментарий</div>
-                    <textarea class="order__form-input order__form-input_textarea" name="comment"></textarea>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment" required></textarea>
+                    <!-- <div class="error"></div> -->
                   </label>
                 </div>
                 <div class="order__form-buttons">
@@ -676,7 +680,7 @@
                     </label>
                   </div>
                   <div class="order__form-row">
-                    <input class="order__form-button" name="" type="submit" value="Заказать">
+                    <input class="order__form-button" name="" type="submit" id="order" value="Заказать">
                     <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
                   </div>
                 </div>
@@ -755,6 +759,17 @@
         <li class="scroll__dot"></li>
       </ul>
     </div>
+
+    <div style="display:none" class="overlay">
+      <div style="position: relative">
+        <div class="overlay__content">
+          <a class="overlay__close" href="#"></a>
+          <div class="overlay__content-wrapper">
+            ФЫЛОВДЛФЫЛДВДФЫ
+          </div>
+        </div>
+      </div>
+  </div>
   </div>
 </body>
 

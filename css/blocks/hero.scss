@@ -3,6 +3,13 @@
     background: url("../img/bg/hero-bg.jpg") center center / cover no-repeat;
     color: #fff;
     position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url("../img/bg/hero-texture-bg.png");
+    }
 }
 
 .hero__container {
@@ -29,7 +36,8 @@
     flex: 1;
     // padding-left: rem(26px);
     justify-content: center;
-    padding: 0 20%;
+    // padding: 0 20%;
+    max-width: rem(940px);
 
     @include tablets {
         flex-direction: column;

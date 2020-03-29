@@ -7,8 +7,14 @@
         @include gagalin();
         font-size: rem(14px);
 
+        &--overlay{
+            color: $black;
+        }
+
         @include phones {
-            font-size:  rem(24px);
+            &:not(&--overlay) {
+                font-size:  rem(24px);
+            }
         }
     }
 
@@ -73,6 +79,9 @@
     }
 
     @include phones {
-        display: none;
+        &:not(&--overlay){
+            display: none;
+        }
+        
     }
 }

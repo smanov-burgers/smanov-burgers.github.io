@@ -21,6 +21,7 @@ $desktop: 1200px;
 @import "_misc/scroll.scss";
 
 // Blocks
+@import "./blocks/overlay.scss";
 @import "./blocks/section.scss";
 @import "./blocks/header.scss";
 @import "./blocks/menu.scss";
