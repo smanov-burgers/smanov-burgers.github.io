@@ -613,6 +613,10 @@ img {
   align-items: center;
   z-index: 10000;
 }
+.overlay__text {
+  min-width: 12.5rem;
+  color: #2f3234;
+}
 
 .overlay__content {
   position: fixed;

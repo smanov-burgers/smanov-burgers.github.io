@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+        
+    initCloseOverlay();
     initSlider();
     initNav();
     initMenu();
     initTeam();
     initReviews();
     initOrder();
+    
 });
 
 
@@ -120,17 +123,6 @@ function initReviews() {
                 overlayElement.style.display = "flex";
             });
 
-            const closeElement = overlayElement.querySelector(".overlay__close");
-            closeElement.addEventListener("click", function (e) {
-                e.preventDefault();
-                overlayElement.style.display = "none";
-            });
-
-            overlayElement.addEventListener("click", function (e) {
-                if (e.target === overlayElement) {
-                    closeElement.click();
-                }
-            });
         }
     });
 
@@ -151,14 +143,32 @@ function initOrder() {
         formData.append(myForm.elements.comment.name, myForm.elements.comment.value);
      
         const xhr = new XMLHttpRequest();
+        xhr.addEventListener('load', () => {
+            displayResponse(xhr.status);
+        });
         xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+        xhr.responseType = "json";
         xhr.send(formData);
 
-        xhr.addEventListener('load', () => {
-            if (xhr.response.status) {
-                console.log('Всё ок!');
+        function displayResponse (status){
+            var statusText = "";
+            if (status < 400) {
+                statusText='Ваш заказ принят!';
             }
-        });
+            else{
+                statusText='Произошла ошибка!';
+            }
+            const overlayElement = document.querySelector(".overlay");
+            var contentNode = overlayElement.querySelector(".overlay__content-wrapper")
+                contentNode.innerHTML = '';
+                var textNode = document.createElement("div");
+                textNode.innerHTML = statusText;
+                textNode.classList.add("overlay__text");
+                contentNode.appendChild(textNode);
+
+                overlayElement.style.display = "flex";
+        }
+        
         // if (validateForm(myForm)) {
         //     console.log('всё ок!');
         // }
@@ -200,7 +210,20 @@ function initOrder() {
 }
 
 
+function initCloseOverlay() {
+    const overlayElement = document.querySelector(".overlay");
+    const closeElement = overlayElement.querySelector(".overlay__close");
+    closeElement.addEventListener("click", function (e) {
+        e.preventDefault();
+        overlayElement.style.display = "none";
+    });
 
+    overlayElement.addEventListener("click", function (e) {
+        if (e.target === overlayElement) {
+            closeElement.click();
+        }
+    });
+}
 
 
 function hasSomeParentWithClass(element, classname) {
