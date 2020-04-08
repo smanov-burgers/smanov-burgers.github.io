@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<div lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная страница</title>
+  <!-- <link rel="stylesheet" href="./css/main.css"> -->
+  <link rel="stylesheet" href="main.min.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sections-wrapper" id="fullpage">
+      <section class="section hero section--align-top" data-anchor="section-hero">
+
+        <div class="container container--full-width">
+          <header class="header">
+            <img src="./img/icons/logo.svg" alt="mr burger icon" class="header__logo">
+            <div class="header__btns">
+              <a href="#" class="btn-close"></a>
+              <nav class="menu menu--display-none">
+                <ul class="menu__list">
+                  <li class="menu__item"><a href="#section-features" class="menu__link">О нас</a></li>
+                  <li class="menu__item"><a href="#section-burgers" class="menu__link">Бургеры</a></li>
+                  <li class="menu__item"><a href="#section-team" class="menu__link">Команда</a></li>
+                  <li class="menu__item"><a href="#section-menu"" class="menu__link">Меню</a></li>
+                  <li class="menu__item"><a href="#section-reviews" class="menu__link">Отзывы</a></li>
+                  <li class="menu__item"><a href="#section-video" class="menu__link">Как мы работаем</a></li>
+                  <li class="menu__item"><a href="#section-contacts" class="menu__link">Контакты</a></li>
+                </ul>
+              </nav>
+              <a href="#section-order" class="btn" id="btn-order">Заказать</a>
+
+              <a class="hamburger-menu" href="">
+                <div class="hamburger-menu--bars"></div>
+              </a>
+            </div>
+          </header>
+          <div class="hero__content">
+            <div class="hero__image">
+              <img src="./img/content/burger.png" class="hero__img-elem" alt="">
+            </div>
+            <div class="hero__text">
+              <h1 class="section__title">
+                Мы делаем
+              </h1>
+              <h3 class="hero__desc">натуральные бургеры</h3>
+            </div>
+          </div>
+          <a class="scroll-down" href="#section-features">
+            <svg class="scroll-down__icon">
+              <use xlink:href="/img/icons/sprite.svg#arrow-scroll"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="section features" data-anchor="section-features">
+        <div class="container container--padded">
+          <h2 class="section__title section__title--centered section__title--color-black">Мы лучшие</h2>
+          <ul class="features__list">
+            <li class="features__item feature">
+              <div class="feature__img">
+                <!-- <img class="feature__img-elem" src="/img/icons/meat.svg" alt="meat"> -->
+                <svg class="feature__img-elem feature__img-elem--meat">
+                  <use xlink:href="/img/icons/sprite.svg#meat"></use>
+                </svg>
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">100% Свежее мясо</h3>
+                <div class="feature__text">
+                  <p>
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="features__item feature">
+              <div class="feature__img">
+                <svg class="feature__img-elem feature__img-elem--hand">
+                  <use xlink:href="/img/icons/sprite.svg#hand"></use>
+                </svg>
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Ручная сборка</h3>
+                <div class="feature__text">
+                  <p>
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
+                    притягивает сюжетный реформаторский пафос.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="features__item feature">
+              <div class="feature__img">
+                <svg class="feature__img-elem feature__img-elem--natural">
+                  <use xlink:href="/img/icons/sprite.svg#natural"></use>
+                </svg>
+              </div>
+              <div class="feature__content">
+                <h3 class="feature__title">Натуральные ингредиенты</h3>
+                <div class="feature__text">
+                  <p>
+                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section burgers" data-anchor="section-burgers">
+        <div class="container">
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__elem">
+                <div class="recipe">
+                  <a href="#" class="recipe__btn">
+                    <svg class="recipe__icon">
+                      <use xlink:href="/img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="recipe__icon-text">состав</div>
+                  </a>
+                  <ul class="recipe__list">
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="recipe__text">Говядина</div>
+                      <div class="recipe__weight">300 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="recipe__text">Булочки</div>
+                      <div class="recipe__weight">100 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="recipe__text">Зелень</div>
+                      <div class="recipe__weight">70 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="recipe__text">Соус</div>
+                      <div class="recipe__weight">150 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="recipe__text">Овощи</div>
+                      <div class="recipe__weight">200 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="recipe__text">Сыр</div>
+                      <div class="recipe__weight">80 г</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__weight">
+                  <svg class="slider__weight-icon">
+                    <use xlink:href="/img/icons/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="slider__weight-text">ккал</div>
+                  <div class="slider__weight-numbers">1200</div>
+                </div>
+
+                <div class="slider__col">
+                  <div class="slider__img">
+                    <img src="/img/content/slider/dark_beef_burger.png" alt="черный бургер">
+                  </div>
+                </div>
+                <div class="slider__col slider__col--padding">
+                  <h2 class="section__title section__title--color-white">Dark BEEF Burger</h2>
+                  <div class="slider__text">
+                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра
+                    эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса
+                    чураско.
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__cost">
+                      <span>500</span> рублей
+                    </div>
+                    <a href="" class="btn">Заказать</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__elem">
+                <div class="recipe">
+                  <a href="#" class="recipe__btn">
+                    <svg class="recipe__icon">
+                      <use xlink:href="/img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="recipe__icon-text">состав</div>
+                  </a>
+                  <ul class="recipe__list">
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="recipe__text">Говядина</div>
+                      <div class="recipe__weight">300 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="recipe__text">Булочки</div>
+                      <div class="recipe__weight">100 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="recipe__text">Зелень</div>
+                      <div class="recipe__weight">70 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="recipe__text">Соус</div>
+                      <div class="recipe__weight">150 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="recipe__text">Овощи</div>
+                      <div class="recipe__weight">200 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="recipe__text">Сыр</div>
+                      <div class="recipe__weight">80 г</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__weight">
+                  <svg class="slider__weight-icon">
+                    <use xlink:href="/img/icons/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="slider__weight-text">ккал</div>
+                  <div class="slider__weight-numbers">1200</div>
+                </div>
+
+                <div class="slider__col">
+                  <div class="slider__img">
+                    <img src="/img/content/slider/chiken_burger.png" alt="черный бургер">
+                  </div>
+                </div>
+                <div class="slider__col slider__col--padding">
+                  <h2 class="section__title section__title--color-white">Chicken Burger</h2>
+                  <div class="slider__text">
+                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра
+                    эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса
+                    чураско.
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__cost">
+                      <span>500</span> рублей
+                    </div>
+                    <a href="" class="btn">Заказать</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__elem">
+                <div class="recipe">
+                  <a href="#" class="recipe__btn">
+                    <svg class="recipe__icon">
+                      <use xlink:href="/img/icons/sprite.svg#burger"></use>
+                    </svg>
+                    <div class="recipe__icon-text">состав</div>
+                  </a>
+                  <ul class="recipe__list">
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#beef"></use>
+                      </svg>
+                      <div class="recipe__text">Говядина</div>
+                      <div class="recipe__weight">300 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#buns"></use>
+                      </svg>
+                      <div class="recipe__text">Булочки</div>
+                      <div class="recipe__weight">100 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#salad"></use>
+                      </svg>
+                      <div class="recipe__text">Зелень</div>
+                      <div class="recipe__weight">70 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--orange">
+                        <use xlink:href="/img/icons/sprite.svg#sauce"></use>
+                      </svg>
+                      <div class="recipe__text">Соус</div>
+                      <div class="recipe__weight">150 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--green">
+                        <use xlink:href="/img/icons/sprite.svg#cucumber"></use>
+                      </svg>
+                      <div class="recipe__text">Овощи</div>
+                      <div class="recipe__weight">200 г</div>
+                    </li>
+                    <li class="recipe__elem">
+                      <svg class="recipe__icon recipe__icon--yellow">
+                        <use xlink:href="/img/icons/sprite.svg#cheese"></use>
+                      </svg>
+                      <div class="recipe__text">Сыр</div>
+                      <div class="recipe__weight">80 г</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slider__weight">
+                  <svg class="slider__weight-icon">
+                    <use xlink:href="/img/icons/sprite.svg#kkal"></use>
+                  </svg>
+                  <div class="slider__weight-text">ккал</div>
+                  <div class="slider__weight-numbers">1200</div>
+                </div>
+
+                <div class="slider__col">
+                  <div class="slider__img">
+                    <img src="/img/content/slider/burger_sandwich.png" alt="черный бургер">
+                  </div>
+                </div>
+                <div class="slider__col slider__col--padding">
+                  <h2 class="section__title section__title--color-white">Burger Sandwich</h2>
+                  <div class="slider__text">
+                    Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра
+                    эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса
+                    чураско.
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__cost">
+                      <span>500</span> рублей
+                    </div>
+                    <a href="" class="btn">Заказать</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a class="slider__arrow slider__arrow--left" href="#">
+              <svg class="slider__arrow-icon">
+                <use xlink:href="/img/icons/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
+            <a class="slider__arrow slider__arrow--right" href="#">
+              <svg class="slider__arrow-icon">
+                <use xlink:href="/img/icons/sprite.svg#arrow-scroll"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" data-anchor="section-team">
+        <div class="container container--full-width">
+          <div class="team">
+            <div class="team__wrapper">
+              <h1 class="section__title">
+                Команда
+              </h1>
+              <ul class="teamacc">
+                <li class="teamacc-item">
+                  <a class="teamacc-item__title" href="#">Дэниэл Редклиф</a>
+                  <div class="teamacc-item__content">
+                    <div class="teamacc-item__avatar teamacc-item__avatar--richard"></div>
+                    <div class="teamacc-item__desc">
+                      <h5 class="teamacc-item__subtitle">Оператор</h5>
+                      <p class="teamacc-item__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="teamacc-item teamacc-item--selected">
+                  <a class="teamacc-item__title" href="#">Ричард Джеймс</a>
+                  <div class="teamacc-item__content">
+                    <div class="teamacc-item__avatar teamacc-item__avatar--richard"></div>
+                    <div class="teamacc-item__desc">
+                      <h5 class="teamacc-item__subtitle">Оператор</h5>
+                      <p class="teamacc-item__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="teamacc-item">
+                  <a class="teamacc-item__title" href="#">Джейк Финн</a>
+                  <div class="teamacc-item__content">
+                    <div class="teamacc-item__avatar teamacc-item__avatar--richard"></div>
+                    <div class="teamacc-item__desc">
+                      <h5 class="teamacc-item__subtitle">Оператор</h5>
+                      <p class="teamacc-item__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="teamacc-item">
+                  <a class="teamacc-item__title" href="#">Николай Иванов</a>
+                  <div class="teamacc-item__content">
+                    <div class="teamacc-item__avatar teamacc-item__avatar--richard"></div>
+                    <div class="teamacc-item__desc">
+                      <h5 class="teamacc-item__subtitle">Оператор</h5>
+                      <p class="teamacc-item__text">С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" data-anchor="section-menu"> 
+        <div class="container container--full-width">
+
+          <div class="section__title-wrapper section__title-wrapper--top-left">
+            <h1 class="section__title">
+              Меню
+            </h1>
+          </div>
+
+
+          <div class="menuacc">
+            <ul class="menuacc__list">
+              <li class="menuacc__elem">
+                <a href="#" class="menuacc__title menuacc__title--img1">
+                  <div class="menuacc__title-text">Для мясоедов</div>
+                </a>
+                <div class="menuacc__content">
+                  <div class="menuacc__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+                    eaque repellendus aspernatur aliquid nostrum facilis porro ut dolor, pariatur ipsam corrupti.
+                    Adipisci
+                    quisquam maiores repellat eius magni corrupti, odit quod?</div>
+                </div>
+              </li>
+              <li class="menuacc__elem ">
+                <a href="#" class="menuacc__title menuacc__title--img2">
+                  <div class="menuacc__title-text">Вегетарианское</div>
+                </a>
+                <div class="menuacc__content">
+                  <div class="menuacc__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+                    eaque repellendus aspernatur aliquid nostrum facilis porro ut dolor, pariatur ipsam corrupti.
+                    Adipisci
+                    quisquam maiores repellat eius magni corrupti, odit quod?</div>
+                </div>
+              </li>
+              <li class="menuacc__elem">
+                <a href="#" class="menuacc__title menuacc__title--img3">
+                  <div class="menuacc__title-text">Диетическое</div>
+                </a>
+                <div class="menuacc__content">
+                  <div class="menuacc__content-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+                    eaque repellendus aspernatur aliquid nostrum facilis porro ut dolor, pariatur ipsam corrupti.
+                    Adipisci
+                    quisquam maiores repellat eius magni corrupti, odit quod?</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" data-anchor="section-reviews">
+        <ul class="reviews__list">
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/1.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/2.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин Спилберг</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/3.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/4.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/5.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/6.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/7.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+          <li class="reviews__item review">
+            <div class="review__img-wrapper">
+              <img src="/img/content/reviews/8.png" alt="smiling girl" class="review__pic">
+            </div>
+            <div class="review__hover">
+              <div class="review__username">Константин</div>
+              <div class="review__content">
+                <p>
+                  Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что
+                  булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                </p>
+              </div>
+              <a href="#" class="btn btn--left btn--desktop">Подробнее</a>
+              <a href="#" class="btn btn--left btn--phone">Читать отзыв</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section video" data-anchor="section-video">
+        <div class="container container--padded">
+          <h2 class="section__title section__title--centered section__title--color-black">Как мы работаем</h2>
+          <div class="player paused" id="player">
+            <div class="player__wrapper">
+              <div id="player-base" class="player__screen">
+                <video src="/video/videoplayback.mp4" class="player__video" id="video"></video>
+              </div>
+
+              <div class="player__controls">
+                <button class="player__start" id="play"></button>
+                <input type="range" min="1" max="100" value="0" class="player__timeline" id="timeline">
+                <input type="range" min="1" max="100" value="100" class="player__volume" id="volume">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order-section" data-anchor="section-order">
+        <div class="container container--padded">
+          <h2 class="section__title section__title--centered">Закажите доставку</h2>
+          <div class="order__form">
+            <form class="order__form-form" id="order-form">
+              <input name="to" type="hidden" id="email" value="Nuridin_s@mail.ru" required>
+              <div class="order__form-col">
+                <div class="order__form-row order__form-row--two">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Имя</div>
+                    <input class="order__form-input" name="name" type="text" placeholder="" required>
+                    <!-- <div class="error"></div> -->
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Телефон</div>
+                    <input class="order__form-input phone-mask" name="phone" type="text" placeholder="" required>
+                    <!-- <div class="error"></div> -->
+                  </label>
+                </div>
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Улица</div>
+                    <input class="order__form-input" name="street" type="text" placeholder="">
+                  </label>
+                </div>
+                <div class="order__form-row order__form-row--four">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Дом</div>
+                    <input class="order__form-input" name="home" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Корпус</div>
+                    <input class="order__form-input" name="part" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Квартира</div>
+                    <input class="order__form-input" name="appt" type="text" placeholder="">
+                  </label>
+                  <label class="order__form-block">
+                    <div class="order__form-label">Этаж</div>
+                    <input class="order__form-input" name="floor" type="text" placeholder="">
+                  </label>
+                </div>
+              </div>
+              <div class="order__form-col">
+                <div class="order__form-row">
+                  <label class="order__form-block">
+                    <div class="order__form-label">Комментарий</div>
+                    <textarea class="order__form-input order__form-input_textarea" name="comment" required></textarea>
+                    <!-- <div class="error"></div> -->
+                  </label>
+                </div>
+                <div class="order__form-buttons">
+                  <div class="order__form-row">
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Потребуется сдача</div>
+                    </label>
+                    <label class="order__radio">
+                      <input class="order__radio-elem" name="payment" type="radio">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Оплата по карте</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <label class="order__radio order__radio_checkbox">
+                      <input class="order__radio-elem" name="callback" type="checkbox">
+                      <div class="order__radio-fake"></div>
+                      <div class="order__radio-title">Не перезванивать</div>
+                    </label>
+                  </div>
+                  <div class="order__form-row">
+                    <input class="order__form-button" name="" type="submit" id="order" value="Заказать">
+                    <input class="order__form-button order__form-button_reset" name="" type="reset" value="Очистить">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts" data-anchor="section-contacts">
+        <div class="container container container--full-width" id="map">
+          <div class="footer">
+            <div class="footer__content">
+              <div class="footer__left">
+                <div class="footer__text">
+                  <div class="footer__address">
+                    Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                  </div>
+                  <div class="footer__phone">
+                    <svg class="footer__phone-icon">
+                      <use xlink:href="/img/icons/sprite.svg#phone"></use>
+                    </svg>
+                    +7 (812) 377-13-77
+                  </div>
+                </div>
+              </div>
+              <div class="footer__right">
+                <ul class="socials">
+                  <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use xlink:href="/img/icons/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use xlink:href="/img/icons/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use xlink:href="/img/icons/sprite.svg#inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="" class="socials__link">
+                      <svg class="socials__icon">
+                        <use xlink:href="/img/icons/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <div class="scroll">
+      <ul class="scroll__list" id="menuScroll">
+        <li class="scroll__dot scroll__dot--active" data-menuanchor="section-hero"></li>
+        <li class="scroll__dot" data-menuanchor="section-features"></li>
+        <li class="scroll__dot" data-menuanchor="section-burgers"></li>
+        <li class="scroll__dot" data-menuanchor="section-team"></li>
+        <li class="scroll__dot" data-menuanchor="section-menu"></li>
+        <li class="scroll__dot" data-menuanchor="section-reviews"></li>
+        <li class="scroll__dot" data-menuanchor="section-video"></li>
+        <li class="scroll__dot" data-menuanchor="section-order"></li>
+        <li class="scroll__dot" data-menuanchor="section-contacts"></li>
+      </ul>
+    </div>
+
+    <div style="display:none" class="overlay">
+      <div style="position: relative">
+        <div class="overlay__content">
+          <a class="overlay__close" href="#"></a>
+          <div class="overlay__content-wrapper">
+            ФЫЛОВДЛФЫЛДВДФЫ
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  
+
+  <script src="main.min.js" type="text/javascript"></script>
+</body>
+
+</div>

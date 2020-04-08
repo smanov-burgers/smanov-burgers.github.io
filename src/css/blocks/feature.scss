@@ -1,0 +1,51 @@
+.feature {
+    text-align: center;
+    
+    @include phones {
+        padding-top: 20px;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        min-width: 100px;
+        
+        &-elem {
+            width: 100px;
+            height: 100px;
+            &--meat {
+                fill: #e25028;
+            }
+
+            &--hand {
+                fill: #f8b43a;
+            }
+
+            &--natural {
+                fill: #a5cd68;
+            }
+        }
+    }
+    
+
+    &__title {
+        @include lifehack();
+        font-size: 24px;
+    }
+
+    &__content {
+        padding-top: 30px;
+
+        @include phones {
+            text-align: left;
+            padding-left: 20px;
+            padding-top: 0;
+        }
+    }
+}
+
+
+// .feature__img {
+    
+// }

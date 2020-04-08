@@ -1,0 +1,31 @@
+.btn {
+    display: inline-block;
+    background: $red;
+    @include ubuntu(medium);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 9px 15px;
+    margin-left: 15px;
+    color: $white;
+
+    &--phone {
+        display: none; 
+        @include phones {
+            display: inline-block; 
+        }
+    }
+
+    &--desktop {
+        @include phones {
+            display: none; 
+        }
+    }
+
+    &--left {
+        margin-left: 0;
+    }
+
+
+}

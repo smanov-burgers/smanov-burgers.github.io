@@ -1,0 +1,70 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(#2f3234, 0.99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+
+    &__text{
+      min-width: 200px;
+      color: $black;
+    }
+  }
+
+  .overlay__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    min-width: 50%;
+    min-height: 200px;
+    border-radius: 8px;
+
+    @include phones {
+        min-width: 90%;
+    }
+
+    &-wrapper {
+        padding: 10%;
+    }
+  }
+
+  .overlay__close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+    }
+
+    &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 4px;
+        background-color: $orange;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+  }

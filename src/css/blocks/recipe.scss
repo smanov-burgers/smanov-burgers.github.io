@@ -1,0 +1,95 @@
+.recipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    // padding: 12px;
+    
+    &__list {
+        display: table;
+        background:rgba($white, 1);
+        position: absolute;
+        left: 90px;
+        top: 0;
+        min-width: 260px;
+        top:-1000px;
+        opacity: 0;
+        transition: opacity .3s;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    &__elem {
+        display: table-row;
+        align-items: center;
+        vertical-align: middle;
+        padding: 5px;
+    }
+
+    &__text {
+        display: table-cell;
+        padding: 5px;
+        vertical-align: middle;
+        @include ubuntu(bold);
+    }
+
+    &__weight {
+        display: table-cell;
+        padding: 5px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+
+    &:hover {
+        .recipe__btn {
+            background: rgba($orange, 1);
+        }
+
+        .recipe__list {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        width: 90px;
+        height: 90px;
+        background: rgba($orange, 0.4);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    &__icon {
+        display: table-cell;
+        fill: #fff;
+        width: 44px;
+        height: 44px;
+        vertical-align: middle;
+        margin: 5px;
+        &--orange {
+            fill: #e25028;
+        }
+
+        &--yellow {
+            fill: #f8b43a;
+        }
+
+        &--green {
+            fill: #a5cd68;
+        }
+    }
+
+    &__icon-text {
+        
+        color: #fff;
+        @include gagalin();
+        font-size: 14px;
+    }
+
+    
+}

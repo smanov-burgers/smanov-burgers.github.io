@@ -1,0 +1,75 @@
+$itemsMargin: 15px;
+
+.menu {
+    display: flex;
+    @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        display: none;
+
+    }
+    
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+    }
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: currentColor;
+      margin-left: $itemsMargin;
+
+      @include tablets {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+    }
+  }
+
+  &:first-child {
+
+      &:before {
+          display: none;
+      }
+  }
+}
+
+.menu__link {
+    margin-left: $itemsMargin;
+    text-decoration: none;
+    @include ubuntu(medium);
+    font-size: 13px;
+    text-transform: uppercase;
+
+    @include tablets {
+        @include ubuntu(light);
+        font-size: 33px;
+        color: #fff;
+        margin-left: 0;
+    }
+}
