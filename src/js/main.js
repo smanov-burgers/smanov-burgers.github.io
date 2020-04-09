@@ -37,13 +37,21 @@ function initTeam() {
 
     teamacc.addEventListener("click", function (e) {
         e.preventDefault();
+        var sameLast = false;
         if (e.target.classList.contains("teamacc-item__title")) {
             if (lastActive) {
+                var liElem = e.target.classList.contains("teamacc-item") ? e.target : e.target.closest(".teamacc-item");
+
+                sameLast = liElem.classList.contains("teamacc-item--selected");
                 lastActive.classList.remove("teamacc-item--selected");
             }
 
-            lastActive = e.target.parentNode;
-            lastActive.classList.add("teamacc-item--selected");
+            if(!sameLast)
+            {
+                lastActive = e.target.parentNode;
+                lastActive.classList.add("teamacc-item--selected");
+            }
+            
         }
     });
 }

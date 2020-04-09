@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 40px;
+    min-height: 450px;
 
     &-item {
         $self: &;
         margin-bottom: 20px;
+        
         &__title {
             color: #ffffff;
             @include gagalin();
@@ -38,6 +40,8 @@
             height: 0;
             overflow: hidden;
             padding-left: 20px;
+            transition:max-height 1s ease-out;
+            max-height:0;
 
             @include tablets {
                 display: flex;
@@ -104,6 +108,8 @@
                 height: auto;
                 padding-top: 10px;
                 padding-bottom: 16px;
+                height:auto;
+                max-height:600px;
             }
         }
     }

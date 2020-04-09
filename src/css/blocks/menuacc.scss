@@ -17,8 +17,11 @@
     &_active {
         .menuacc__content {
             width: 540px;
+            @include tablets {
+                width: 360px;
+            }
             @include phones {
-                width: 200px;
+                width: 120px;
             }
         }
         .menuacc__title-text {
@@ -30,8 +33,11 @@
      &--active {
         .menuacc__content {
             width: 540px;
+            @include tablets {
+                width: 360px;
+            }
             @include phones {
-                width: 200px;
+                width: 120px;
             }
         }
         .menuacc__title-text {

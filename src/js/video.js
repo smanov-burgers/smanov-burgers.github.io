@@ -4,6 +4,9 @@ $(document).ready(function () {
     const player = $('#player');
     const progress = $('#timeline');
     const volume = $('#volume');
+    const screenStub = $('#screenStub');
+
+
     function togglePlayPause() {
         player.toggleClass('paused')
 
@@ -17,6 +20,10 @@ $(document).ready(function () {
 
     playBtn.on('click', function () {
         togglePlayPause();
+    });
+
+    screenStub.on('click', function () {
+        playBtn.click();
     });
 
     video.addEventListener('timeupdate', function () {
