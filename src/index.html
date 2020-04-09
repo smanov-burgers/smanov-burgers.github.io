@@ -624,7 +624,7 @@
               <div id="player-base" class="player__screen">
                 <div class="player__screen-stub" id="screenStub">
                   <svg class="player__screen-icon">
-                    <use xlink:href="/img/icons/play.svg#play"></use>
+                    <use xlink:href="/img/icons/sprite.svg#play"></use>
                   </svg>
                 </div>
                 <video src="/video/videoplayback.mp4" class="player__video" id="video"></video>
@@ -633,6 +633,9 @@
               <div class="player__controls">
                 <button class="player__start" id="play"></button>
                 <input type="range" min="1" max="100" value="0" class="player__timeline" id="timeline">
+                <svg class="player__volume-icon">
+                  <use xlink:href="/img/icons/sprite.svg#volume"></use>
+                </svg>
                 <input type="range" min="1" max="100" value="100" class="player__volume" id="volume">
               </div>
             </div>

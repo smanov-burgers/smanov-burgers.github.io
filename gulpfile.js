@@ -89,7 +89,7 @@ task('icons', () => {
             plugins: [
                 {
                     removeAttrs: {
-                        attrs: '(fill|stroke|style|width|height|data.*)'
+                        attrs: '(fill|stroke|style)'
                     }
                 }
             ]
@@ -101,7 +101,7 @@ task('icons', () => {
                 }
             }
         }))
-        .pipe(dest(`${DIST_PATH}/images/icons`));
+        .pipe(dest(`${DIST_PATH}/img/icons`));
 });
 
 task('server', () => {
@@ -119,13 +119,13 @@ task('watch', () => {
     watch(`./${SRC_PATH}/*.woff`, series('copy:fonts'));
     watch(`./${SRC_PATH}/*.{jpg,jpeg,png,gif,svg}`, series('copy:img'));
     watch(`./${SRC_PATH}/js/*.js`, series('scripts'));
-    //watch('./src/images/icons/*.svg', series('icons'));
+    //watch(`./${SRC_PATH}/img/icons/*.svg`, series('icons'));
 });
 
 task('default',
     series(
         'clean',
-        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts'/*, 'icons'*/),
+        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts', 'icons'),
         parallel('watch', 'server')
     )
 );
@@ -133,7 +133,7 @@ task('default',
 task('build',
     series(
         'clean',
-        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts'/*, 'icons'*/),
+        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts', 'icons'),
         parallel('watch', 'server')
     )
 );
