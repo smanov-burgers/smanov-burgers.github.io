@@ -26,4 +26,10 @@
     &__dot.active {
         border: 1px solid #fff;
     }
+
+    &__link {
+        position: absolute;
+        height: 16px;
+        width: 16px;
+    }
 }

@@ -133,5 +133,7 @@ task('default',
 task('build',
     series(
         'clean',
-        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts'/*, 'icons'*/))
+        parallel('copy:html','copy:img','copy:video','copy:fonts', 'styles', 'scripts'/*, 'icons'*/),
+        parallel('watch', 'server')
+    )
 );

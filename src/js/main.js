@@ -24,6 +24,10 @@ function initNav() {
         e.preventDefault();
         header.classList.toggle("header--overlay");
     });
+
+    $('.menu__item').on('click', function (e) {
+        header.classList.remove("header--overlay");
+    });
 }
 
 function initTeam() {
